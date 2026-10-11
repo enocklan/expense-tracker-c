@@ -1,60 +1,88 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Expense tracker</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <div class="header">
-      <h1>Good Morning Enock!</h1>
-      <div class="header-controls">
-        <div class="dropdown">Daily <i class="fa fa-chevron-down"></i></div>
-        <div class="date-picker">
-          <i class="fa fa-calendar"></i>
-          10-October-2026
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense tracker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="header">
+    <h1>Good Morning Enock!</h1>
+    <div class="header-controls">
+      <div class="dropdown">Daily <i class="fa fa-chevron-down"></i></div>
+      <div class="date-picker">
+        <i class="fa fa-calendar"></i>
+        10-October-2026
+      </div>
+      <div class="export-btn">
+        <i class="fa fa-download"></i>
+        Export
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="dashboard-grid">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Monthly Income</h3>
+          <button class="card-Menu"><i class="fas fa-ellipsis-h"></i></button>
         </div>
-        <div class="export-btn">
-          <i class="fa fa-download"></i>
-          Export
+        <div class="amount income-amount">$5,000.00</div>
+        <div class="change">
+          <i class="fas fa-arrow-up"></i>
+          12% vs last month
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Monthly Expenses</h3>
+          <button class="card-Menu"><i class="fas fa-ellipsis-h"></i></button>
+        </div>
+        <div class="amount expense-amount">$1,895.00</div>
+        <div class="change">
+          <i class="fas fa-arrow-up"></i>
+          12% vs last month
+        </div>
+      </div>
+
+      <div class="card my-card">
+        <div class="card-header">
+          <h3 class="card-title">My Card</h3>
+          <button class="card-Menu" style="color: white">
+            <i class="fas fa-ellipsis-h"></i>
+          </button>
+        </div>
+        <div style="font-size: 0.75rem; opacity: 0.8; margin-bottom: 1rem">
+          linked to your primary Wallet
+        </div>
+        <div class="card-chip"></div>
+        <div class="card-number">5422 2244 7525 1234</div>
+        <div class="card-holder">Enock langat</div>
+        <div class="card-logo">
+          <div class="card-logo circle logo-red"></div>
+          <div class="card-logo circle logo-orange"></div>
+        </div>
+        <div class="spending-section">
+          <div style="margin-bottom: 0.5rem; font-size: 0.875rem; opacity: 0.9">
+            Spending limit
+          </div>
+          <div class="spending-limit">$4,645.00</div>
+          <div class="spending-used">used from $16,645.00</div>
+          <div class="progres-bar">
+            <div class="progress-fill"></div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="main-content">
-      <div class="dashboard-grid">
-        <div class="card">
-          <div class="card-header">
-            <h3 class="card-title">Monthly Income</h3>
-            <button class="card-Menu"><i class="fas fa-ellipsis-h"></i></button>
-          </div>
-          <div class="amount income-amount">$5,000.00</div>
-          <div class="change">
-            <i class="fas fa-arrow-up"></i>
-            12% vs last month
-          </div>
-        </div>
-         
-          <div class="card">
-          <div class="card-header">
-            <h3 class="card-title">Monthly Expenses</h3>
-            <button class="card-Menu"><i class="fas fa-ellipsis-h"></i></button>
-          </div>
-          <div class="amount expense-amount">$1,895.00</div>
-          <div class="change">
-            <i class="fas fa-arrow-up"></i>
-            12% vs last month
-          </div>
-        </div>
-      </div>
-    </div>
+  <script src="script.js"></script>
+</body>
 
-    <script src="script.js"></script>
-  </body>
 </html>

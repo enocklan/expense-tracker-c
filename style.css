@@ -126,3 +126,37 @@ main {
     gap: 0.25rem;
 }
 
+.my-card{
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    color:white;
+    position:relative;
+    overflow:hidden;
+}
+
+.card-chip{
+    width: 40px;
+    height: 24px;
+    background:#fbbf24;
+    border-radius:4px; 
+    margin-bottom:2rem;
+    position:relative;
+
+}
+
+.card-chip::after{
+    content:'';
+    position:absolute;
+    top:4px;
+    left:4px;
+    right:4px;
+    bottom:4px;
+    background:#92400e;
+    border-radius:2px;
+}
+
+.card-number{
+    font-size:1.25rem;
+    letter-spacing:0.1rem;
+    margin-bottom:1rem;
+    font-family:"Courier New", monospace;
+}
